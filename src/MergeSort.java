@@ -12,7 +12,7 @@ public class MergeSort {
 	{
 	   
 		int mid=(low+max)/2;
-		while(low<max)
+		if(low<max)
 		{
 			mergerSort(T,low,mid);
 			mergerSort(T,mid+1,max);
@@ -43,7 +43,7 @@ public class MergeSort {
 	}
 	
 	public static void main(String[] args) {
-		int[] T=new int[] {1,2,3,4,5,6,7,8,9};
+		int[] T=new int[] {4,5,2,3,1};
 		MergeSort m=new MergeSort();
 		m.sort(T);
 		System.out.println(Arrays.toString(T));
